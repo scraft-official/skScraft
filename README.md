@@ -5,9 +5,9 @@ skScraft - Bungee Syntaxes for Skript.
 #### CONDITIONS　
 
 ```java
-[player] %string% is connected to [bungeecord] network"
-server %string% is online
-server %string% is offline
+if [player] %string% is connected to [bungeecord] network:
+if server %string% is online:
+if server %string% is offline:
 ```
 #### EFFECTS　
 
