@@ -43,9 +43,9 @@ send bungee[cord] message %string% to [player] %string%
 number of players on [bungee[cord]] network
 number of players on [bungee[cord]] server %string%
 ```
-***** [] - You don't need to use text inside of this characters (ex. [bungee[cord]] -> use bungeecord or bungee)
+* [] - You don't need to use text inside of this characters (ex. [bungee[cord]] -> use bungeecord or bungee)
 
-***** () - You can choose wich text you want to use (ex. (send|connect) -> use send or connect)
+* () - You can choose wich text you want to use (ex. (send|connect) -> use send or connect)
 
 ------------
 #### DO YOU HAVE ANY SUGESTIONS FOR OTHER SYNTAX?　
