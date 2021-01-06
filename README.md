@@ -1,13 +1,32 @@
 # skScraft
-skScraft - Bungee Syntaxes for Skript.
+skScraft - Easy to use Bungee Syntaxes for Skript. 
+# INSTALLATION
+To use skScraft you need to install some dependencies. **Skript** of course is the main one, but to make skScraft connect and communicate with **BungeeCord**, you need to upload **BungeeBridge** plugin on your **Spigot server**, and **BungeeCord Proxy**.
 
-## SYNTAXES:
+1. Download **[latest](https://github.com/scraft-official/skScraft/releases/tag/1.0 "Click here to download, latest release!")** release of **skScraft**.
+2. Download **[latest](https://www.spigotmc.org/resources/bungeebridge.5820/ "Click here to download, latest release!")** release of **BungeeBridge**.
+3. Unzip downloaded **BungeeBridge.zip** and upload **BungeeBridge_Client** to **spigot** server, and **BungeeBridge_Server** to **BungeeCord** Proxy.
+4. Upload downloaded **skScraft** to **ONLY** **spigot** server.
+5. Launch **BungeeCord** proxy first, then **Spigot** server, and *change config* file of *BungeeBridge* if you need. (If you have different IP adresses of BungeeCord proxy and Spigot server in example.)
+6. If you want to see some **additional information** (*about why you have <none>, when you use one of syntaxes*) go to **skScraft directory**, and set **DEBUG MODE** to true in **config.yml**. Then go back to the server and type command **/skScraft reload** in console or as a player.
+
+------------
+
+***Very important!** When you will use **skScraft** syntaxes, use** parasing player as text** (ex. "%player%", "%arg-1%"). The main reason of that, is parasing online player by skript, can not work correctly, if player is not connected to the same server where the syntax is used. So **always** parse **player** **as** **text**, to make it **working** without problems!
+
+***NOT CORRECT*** -> ( *if player is connected to bungeecord network* )
+***CORRECT*** -> ( *if "%player%" is connected to bungeecord network* )
+
+------------
+
+
+# SYNTAXES
 #### CONDITIONS　
 
 ```java
-if [player] %string% is connected to [bungeecord] network:
-if server %string% is online:
-if server %string% is offline:
+[player] %string% is connected to [bungeecord] network
+server %string% is online
+server %string% is offline
 ```
 #### EFFECTS　
 
@@ -24,17 +43,18 @@ send bungee[cord] message %string% to [player] %string%
 number of players on [bungee[cord]] network
 number of players on [bungee[cord]] server %string%
 ```
-
-#### DO YOU HAVE ANY SUGESTION FOR OTHER SYNTAX?　
+------------
+#### DO YOU HAVE ANY SUGESTIONS FOR OTHER SYNTAX?　
 If you want me to add more **bungeecord syntaxes** to this addon, join to my **discord server**, and add your proposition on channel **suggestions**.
 
-#### DO YOU HAVE ANY ISSUE?
+#### DO YOU HAVE ANY ISSUES?
 If you found any bugs or issue when using my addon, fell free to join to skScraft discord server. I will try do to my best to help you, and find the solution. ;).
 
 **skScraft Discord link ->** https://discord.gg/invite/DE4Tqr6CDD
 **My Discord ID ->** 🚀 Scraft Official 🚀#9999
 
-#### EXAMPLE:
+------------
+#### EXAMPLE OF SYNTAXES:
 ```java
 command /test:
   trigger:
