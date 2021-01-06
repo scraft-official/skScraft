@@ -1,4 +1,4 @@
-# skScraft
+# skScraft - BungeeCord syntaxes for Skript
 skScraft - Easy to use BungeeCord Syntaxes for Skript. 
 # INSTALLATION
 To use skScraft you need to install some dependencies. **Skript** of course is the main one, but to make skScraft connect and communicate with **BungeeCord**, you need to upload **BungeeBridge** plugin on your **Spigot server**, and **BungeeCord Proxy**.
@@ -15,6 +15,7 @@ To use skScraft you need to install some dependencies. **Skript** of course is t
 ***Very important!** When you will use **skScraft** syntaxes, use** parasing player as text** (ex. "%player%", "%arg-1%"). The main reason of that, is parasing online player by skript, can not work correctly, if player is not connected to the same server where the syntax is used. So **always** parse **player** **as** **text**, to make it **working** without problems!
 
 ***NOT CORRECT*** -> ( *if player is connected to bungeecord network* )
+
 ***CORRECT*** -> ( *if "%player%" is connected to bungeecord network* )
 
 ------------
