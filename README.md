@@ -1,5 +1,5 @@
 # skScraft
-skScraft - Easy to use Bungee Syntaxes for Skript. 
+skScraft - Easy to use BungeeCord Syntaxes for Skript. 
 # INSTALLATION
 To use skScraft you need to install some dependencies. **Skript** of course is the main one, but to make skScraft connect and communicate with **BungeeCord**, you need to upload **BungeeBridge** plugin on your **Spigot server**, and **BungeeCord Proxy**.
 
