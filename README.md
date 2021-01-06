@@ -8,7 +8,7 @@ To use skScraft you need to install some dependencies. **Skript** of course is t
 3. Unzip downloaded **BungeeBridge.zip** and upload **BungeeBridge_Client** to **spigot** server, and **BungeeBridge_Server** to **BungeeCord** Proxy.
 4. Upload downloaded **skScraft** to **ONLY** **spigot** server.
 5. Launch **BungeeCord** proxy first, then **Spigot** server, and *change config* file of *BungeeBridge* if you need. (If you have different IP adresses of BungeeCord proxy and Spigot server in example.)
-6. If you want to see some **additional information** (*about why you have <<none>>, when you use one of syntaxes*) go to **skScraft directory**, and set **DEBUG MODE** to true in **config.yml**. Then go back to the server and type command **/skScraft reload** in console or as a player.
+6. If you want to see some **additional information** (*about why you have null, when you use one of syntaxes*) go to **skScraft directory**, and set **DEBUG MODE** to true in **config.yml**. Then go back to the server and type command **/skScraft reload** in console or as a player.
 
 ------------
 
