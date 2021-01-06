@@ -1,0 +1,11 @@
+name: skScraft
+author: Scraft Official
+description: Bungee packet based condition and events.
+version: 1.0
+main: me.scraft.addon.Main
+depend: []
+commands:
+  skScraft reload:
+      description: Reload config file of skScraft addon.
+  skScraft:
+      description: Print help information fo skScraft addon.
