@@ -14,7 +14,7 @@ To use skScraft you need to install some dependencies. **Skript** of course is t
 
 ------------
 
-***Very important!** When you will use **skScraft** syntaxes, use** parasing player as text** (ex. "%player%", "%arg-1%"). The main reason of that, is parasing online player by skript, can not work correctly, if player is not connected to the same server where the syntax is used. So **always** parse **player** **as** **text**, to make it **working** without problems!
+***Very important!** When you will use **skScraft** syntaxes, use **parasing player as text** (ex. "%player%", "%arg-1%"). The main reason of that, is parasing online player by skript, can not work correctly, if player is not connected to the same server where the syntax is used. So **always** parse **player** **as** **text**, to make it **working** without problems!
 
 ***NOT CORRECT*** -> ( *if player is connected to bungeecord network* )
 
@@ -37,6 +37,10 @@ server %string% is offline
 broadcast bungee[cord] message %string%
 send bungee[cord] message %string% to [player] %string%
 (send|connect) [player] %string% to bungee[cord] server %string%
+execute command %string% on [bungee[cord]] network as [player] %string%
+execute command %string% on [bungee[cord]] proxy
+kick all players from [bungee[cord]] network with message %string%
+stop [bungee[cord]] proxy [with message %string%]
 ```
 
 #### EXPRESSIONS　
@@ -45,6 +49,9 @@ send bungee[cord] message %string% to [player] %string%
 [bungee[cord]] server of [player] %string%
 number of players on [bungee[cord]] network
 number of players on [bungee[cord]] server %string%
+[bungee[cord]] uuid of [player] %string%
+[number of] [max] slots of [bungee[cord]] server %string%
+[bungee[cord]] network ip of [player] %string%%
 ```
 * [] - You don't need to use text inside of this characters (ex. [bungee[cord]] -> use bungeecord or bungee)
 
@@ -55,7 +62,7 @@ number of players on [bungee[cord]] server %string%
 If you want me to add more **bungeecord syntaxes** to this addon, join to my **discord server**, and add your proposition on channel **suggestions**.
 
 #### DO YOU HAVE ANY ISSUES?
-If you found any bugs or issue when using my addon, fell free to join to skScraft discord server. I will try do to my best to help you, and find the solution. ;).
+If you found any bugs or issue when using my addon, fell free to join to skScraft discord server. I will try to do my best to help you, and find the solution. ;).
 
 **skScraft Discord link ->** https://discord.gg/invite/DE4Tqr6CDD
 **My Discord ID ->** 🚀 Scraft Official 🚀#9999
