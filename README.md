@@ -1,5 +1,5 @@
 # skScraft - BungeeCord syntaxes for Skript
-skScraft - Easy to use BungeeCord syntaxes for Skript.
+skScraft - Easy to use BungeeCord syntaxes for Skript. With config to edit default messages (ex. Defalut message when stopping proxy server).
 
 **Versions Supported**: 1.9, 1.10, 1.11, 1.12 
 # INSTALLATION
@@ -39,7 +39,7 @@ send bungee[cord] message %string% to [player] %string%
 (send|connect) [player] %string% to bungee[cord] server %string%
 execute command %string% on [bungee[cord]] network as [player] %string%
 execute command %string% on [bungee[cord]] proxy
-kick all players from [bungee[cord]] network with message %string%
+kick all players from [bungee[cord]] network [with message %string%]
 stop [bungee[cord]] proxy [with message %string%]
 ```
 
