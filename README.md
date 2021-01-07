@@ -39,7 +39,7 @@ send bungee[cord] message %string% to [player] %string%
 (send|connect) [player] %string% to bungee[cord] server %string%
 execute command %string% on [bungee[cord]] network as [player] %string%
 execute command %string% on [bungee[cord]] proxy
-kick all players from [bungee[cord]] network with message %string%
+kick all players from [bungee[cord]] network [with message %string%]
 stop [bungee[cord]] proxy [with message %string%]
 ```
 
