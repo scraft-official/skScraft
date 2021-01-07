@@ -10,7 +10,6 @@ import ch.njol.skript.lang.Effect;
 import ch.njol.skript.lang.Expression;
 import ch.njol.skript.lang.SkriptParser.ParseResult;
 import ch.njol.util.Kleenean;
-
 import me.scraft.addon.files.customConfig;
 import me.dommi2212.BungeeBridge.packets.PacketKickAllPlayers;
 
@@ -18,7 +17,7 @@ import me.dommi2212.BungeeBridge.packets.PacketKickAllPlayers;
 public class EffKickAllPlayersFromBungeeCord extends Effect {
 	 
     static {
-        Skript.registerEffect(EffKickAllPlayersFromBungeeCord.class, "kick all players from [bungee[cord]] network with message %string%");
+        Skript.registerEffect(EffKickAllPlayersFromBungeeCord.class, "kick all players from [bungee[cord]] network [with message %-string%]");
     }
  
     private Expression<String> message;
@@ -32,14 +31,18 @@ public class EffKickAllPlayersFromBungeeCord extends Effect {
  
     @Override
     public String toString(@Nullable Event event, boolean debug) {
-        return "Effect: kick all players from [bungee[cord]] network with message %string%";
+        return "Effect: kick all players from [bungee[cord]] network [with message %-string%]";
     }
  
     @Override
     protected void execute(Event event) {
-    	if(message.getSingle(event) == null) {		
+    	final String m = message != null ? message.getSingle(event) : "";
+    	
+    	if(m == "") {
+    		PacketKickAllPlayers packet = new PacketKickAllPlayers(customConfig.get().getString("Default kick message"));
+    		packet.send();
     		if (customConfig.get().getBoolean("DEBUG MODE") == true) {
-				Bukkit.getLogger().info("§3[§bDEBUG§3] §eskScraft §e» §6Message not set!");
+    			Bukkit.getLogger().info("§3[§bDEBUG§3] §eskScraft §e» §6Kicking all players from network");
 			}
     	}
     	else {

@@ -12,13 +12,14 @@ import ch.njol.skript.lang.SkriptParser.ParseResult;
 import ch.njol.util.Kleenean;
 
 import me.scraft.addon.files.customConfig;
+import net.md_5.bungee.api.ChatColor;
 import me.dommi2212.BungeeBridge.packets.PacketStopProxy;
 
 
 public class EffStopProxyServer extends Effect {
 	 
     static {
-        Skript.registerEffect(EffStopProxyServer.class, "stop [bungee[cord]] proxy [with message %string%]");
+        Skript.registerEffect(EffStopProxyServer.class, "stop [bungee[cord]] proxy [with message %-string%]");
     }
  
     private Expression<String> message;
@@ -32,13 +33,14 @@ public class EffStopProxyServer extends Effect {
  
     @Override
     public String toString(@Nullable Event event, boolean debug) {
-        return "Effect: stop [bungee[cord]] proxy";
+        return "Effect: stop [bungee[cord]] proxy [with message %string%]";
     }
  
     @Override
     protected void execute(Event event) {
-    	if(message.getSingle(event) == null) {
-    		PacketStopProxy packet = new PacketStopProxy();
+    	final String m = message != null ? message.getSingle(event) : "";
+    	if(m == "") {
+    		PacketStopProxy packet = new PacketStopProxy(ChatColor.translateAlternateColorCodes('&', customConfig.get().getString("Default stop proxy message")));
     		packet.send();
     		
     		if (customConfig.get().getBoolean("DEBUG MODE") == true) {

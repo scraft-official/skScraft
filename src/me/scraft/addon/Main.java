@@ -21,10 +21,12 @@ Main instance;
    
    
    public void onEnable() {
-	   double ver = 1.1;
+	   double ver = 1.2;
 	   
 	   customConfig.setup(ver);
 	   customConfig.get().addDefault("DEBUG MODE", false);
+	   customConfig.get().addDefault("Default kick message", "§eYou have been kicked from the network!");
+	   customConfig.get().addDefault("Default stop proxy message", "§eProxy server is restarting!");
 	   customConfig.get().addDefault("VERSION", ver);
 	   customConfig.get().options().copyDefaults(true);
 	   customConfig.save();
