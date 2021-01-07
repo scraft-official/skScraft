@@ -15,15 +15,15 @@ import org.bukkit.plugin.Plugin;
 
  
 public class Main extends JavaPlugin {
- 
-   Main instance;
+
+Main instance;
    SkriptAddon addon;
    
    
    public void onEnable() {
-	   double ver = 1.0;
+	   double ver = 1.1;
 	   
-	   customConfig.setup();
+	   customConfig.setup(ver);
 	   customConfig.get().addDefault("DEBUG MODE", false);
 	   customConfig.get().addDefault("VERSION", ver);
 	   customConfig.get().options().copyDefaults(true);
