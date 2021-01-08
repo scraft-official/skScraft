@@ -1,16 +1,31 @@
 # skScraft - BungeeCord syntaxes for Skript
 skScraft - Easy to use BungeeCord syntaxes for Skript. With config to edit default messages (ex. Defalut message when stopping proxy server).
 
-**Versions Supported**: 1.9, 1.10, 1.11, 1.12 
+**Versions Supported**: 1.9, 1.10, 1.11, 1.12, 1.13, **(1.14, 1.15, 1.16 follow INSTALLATION [MC 1.14-1.16])**
 # INSTALLATION
 To use skScraft you need to install some dependencies. **Skript** of course is the main one, but to make skScraft connect and communicate with **BungeeCord**, you need to upload **BungeeBridge** plugin on your **Spigot server**, and **BungeeCord Proxy**.
 
-1. Download **[latest](https://github.com/scraft-official/skScraft/releases/tag/1.0 "Click here to download, latest release!")** release of **skScraft**.
-2. Download **[latest](https://www.spigotmc.org/resources/bungeebridge.5820/ "Click here to download, latest release!")** release of **BungeeBridge**.
-3. Unzip downloaded **BungeeBridge.zip** and upload **BungeeBridge_Client** to **spigot** server, and **BungeeBridge_Server** to **BungeeCord** Proxy.
-4. Upload downloaded **skScraft** to **ONLY** **spigot** server.
-5. Launch **BungeeCord** proxy first, then **Spigot** server, and *change config* file of *BungeeBridge* if you need. (If you have different IP adresses of BungeeCord proxy and Spigot server in example.)
-6. If you want to see some **additional information** (*about why you have null, when you use one of syntaxes*) go to **skScraft directory**, and set **DEBUG MODE** to true in **config.yml**. Then go back to the server and type command **/skScraft reload** in console or as a player.
+## INSTALLATION [MC 1.9-1.13]:
+- Don't forget to download Skript and BungeeBridge to make it work!
+- Skript - https://github.com/SkriptLang/Skript/releases
+- Download **BungeeBridge[1.9-1.13].zip**, added to [latest release of skScraft](github.com/scraft-official/skScraft/releases/latest "Click here to download, special release!").
+- Unzip BungeeBridge[1.9-1.13].zip
+- Upload BungeeBridge_Client to all of your spigot servers, and BungeeBridge_Server to BungeeCord proxy!
+- Download **[latest](https://github.com/scraft-official/skScraft/releases/tag/1.0 "Click here to download, latest release!")** release of **skScraft**.
+- Upload skScraft ONLY to your spigot server!
+- Launch **BungeeCord** proxy first, then **Spigot** server, and *change config* file of *BungeeBridge* if you need. (If you have different IP adresses of BungeeCord proxy and Spigot server in example.)
+- If you want to see some **additional information** (*about why you have null, when you use one of syntaxes*) go to **skScraft directory**, and set **DEBUG MODE** to true in **config.yml**. Then go back to the server and type command **/skScraft reload** in console or as a player.
+
+## INSTALLATION [MC 1.14-1.16]:
+- Don't forget to download Skript and BungeeBridge to make it work!
+- Skript - https://github.com/SkriptLang/Skript/releases
+- Download **BungeeBridge[1.14-1.16].zip**, added to [latest release of skScraft](github.com/scraft-official/skScraft/releases/latest "Click here to download, special release!").
+- Unzip BungeeBridge[1.14-1.16].zip.
+- Upload BungeeBridge_Client to all of your spigot servers, and BungeeBridge_Server to BungeeCord proxy!
+- Download **[latest](https://github.com/scraft-official/skScraft/releases/tag/1.0 "Click here to download, latest release!")** release of **skScraft**.
+- Upload skScraft ONLY to your spigot server!
+- Launch **BungeeCord** proxy first, then **Spigot** server, and *change config* file of *BungeeBridge* if you need. (If you have different IP adresses of BungeeCord proxy and Spigot server in example.)
+- If you want to see some **additional information** (*about why you have null, when you use one of syntaxes*) go to **skScraft directory**, and set **DEBUG MODE** to true in **config.yml**. Then go back to the server and type command **/skScraft reload** in console or as a player.
 
 ------------
 
@@ -57,6 +72,8 @@ number of players on [bungee[cord]] server %string%
 
 * () - You can choose wich text you want to use (ex. (send|connect) -> use send or connect)
 
+[![SkriptHubViewTheDocs](http://skripthub.net/static/addon/ViewTheDocsButton.png)](http://skripthub.net/docs/?addon=skScraft)
+
 ------------
 #### DO YOU HAVE ANY SUGESTIONS FOR OTHER SYNTAX?　
 If you want me to add more **bungeecord syntaxes** to this addon, join to my **discord server**, and add your proposition on channel **suggestions**.
@@ -64,7 +81,7 @@ If you want me to add more **bungeecord syntaxes** to this addon, join to my **d
 #### DO YOU HAVE ANY ISSUES?
 If you found any bugs or issue when using my addon, fell free to join to skScraft discord server. I will try to do my best to help you, and find the solution. ;).
 
-**skScraft Discord link ->** https://discord.gg/invite/DE4Tqr6CDD
+**skScraft Discord link ->** https://discord.gg/MBYEeukXuT
 **My Discord ID ->** 🚀 Scraft Official 🚀#9999
 
 ------------
@@ -161,5 +178,5 @@ command /test:
     send "&eskScraft &e» &6THIS WAS LAST EXAMPLE"
     send "&eskScraft &e» &6IF YOU HAVE A SUGGESTION FOR NEW FEATURE"
     send "&eskScraft &e» &6JOIN TO skScraft DISCORD SERVER:"
-    send "&eskScraft &e» &dhttps://discord.gg/invite/DE4Tqr6CDD"
+    send "&eskScraft &e» &dhttps://discord.gg/MBYEeukXuT"
 ```
