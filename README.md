@@ -72,6 +72,8 @@ number of players on [bungee[cord]] server %string%
 
 * () - You can choose wich text you want to use (ex. (send|connect) -> use send or connect)
 
+[![SkriptHubViewTheDocs](http://skripthub.net/static/addon/ViewTheDocsButton.png)](http://skripthub.net/docs/?addon=skScraft)
+
 ------------
 #### DO YOU HAVE ANY SUGESTIONS FOR OTHER SYNTAX?　
 If you want me to add more **bungeecord syntaxes** to this addon, join to my **discord server**, and add your proposition on channel **suggestions**.
