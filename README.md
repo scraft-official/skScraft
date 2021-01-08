@@ -79,7 +79,7 @@ If you want me to add more **bungeecord syntaxes** to this addon, join to my **d
 #### DO YOU HAVE ANY ISSUES?
 If you found any bugs or issue when using my addon, fell free to join to skScraft discord server. I will try to do my best to help you, and find the solution. ;).
 
-**skScraft Discord link ->** https://discord.gg/invite/DE4Tqr6CDD
+**skScraft Discord link ->** https://discord.gg/MBYEeukXuT
 **My Discord ID ->** 🚀 Scraft Official 🚀#9999
 
 ------------
@@ -176,5 +176,5 @@ command /test:
     send "&eskScraft &e» &6THIS WAS LAST EXAMPLE"
     send "&eskScraft &e» &6IF YOU HAVE A SUGGESTION FOR NEW FEATURE"
     send "&eskScraft &e» &6JOIN TO skScraft DISCORD SERVER:"
-    send "&eskScraft &e» &dhttps://discord.gg/invite/DE4Tqr6CDD"
+    send "&eskScraft &e» &dhttps://discord.gg/MBYEeukXuT"
 ```
