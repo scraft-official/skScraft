@@ -7,6 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.SkriptAddon;
+import me.scraft.addon.bstats.Metrics;
 import me.scraft.addon.commands.helpMessage;
 import me.scraft.addon.files.customConfig;
 
@@ -21,8 +22,10 @@ Main instance;
    
    
    public void onEnable() {
-	   double ver = 1.2;
-	   
+	   double ver = 1.3;
+	   int pluginId = 9931;
+       Metrics metrics = new Metrics(this, pluginId);
+       
 	   customConfig.setup(ver);
 	   customConfig.get().addDefault("DEBUG MODE", false);
 	   customConfig.get().addDefault("Default kick message", "§eYou have been kicked from the network!");
@@ -30,8 +33,10 @@ Main instance;
 	   customConfig.get().addDefault("VERSION", ver);
 	   customConfig.get().options().copyDefaults(true);
 	   customConfig.save();
-		   
 	   
+	   metrics.addCustomChart(new Metrics.SimplePie("version", () -> String.valueOf(ver)));
+       metrics.addCustomChart(new Metrics.SimplePie("debug_mode", () -> String.valueOf(customConfig.get().getBoolean("DEBUG MODE"))));
+		     
 	   Plugin skriptPlugin = Bukkit.getPluginManager().getPlugin("Skript");
 	   if (skriptPlugin == null) {
 	    	Bukkit.getLogger().info("");
