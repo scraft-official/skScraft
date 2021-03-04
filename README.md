@@ -1,5 +1,5 @@
 # skScraft - BungeeCord syntaxes for Skript
-skScraft - Easy to use BungeeCord syntaxes for Skript. With config to edit default messages (ex. Defalut message when stopping proxy server).
+skScraft - Easy to use BungeeCord syntaxes for Skript. With config to edit default messages (ex. Default message when stopping proxy server).
 
 **Versions Supported**: 1.9, 1.10, 1.11, 1.12, 1.13, **(1.14, 1.15, 1.16 follow INSTALLATION [MC 1.14-1.16])**
 # INSTALLATION
