@@ -64,7 +64,7 @@ stop [bungee[cord]] proxy [with message %string%]
 [bungee[cord]] server of [player] %string%
 number of players on [bungee[cord]] network
 number of players on [bungee[cord]] server %string%
-[bungee[cord]] uuid of [player] %string%
+[bungee[cord]] network uuid of [player] %string%
 [number of] [max] slots of [bungee[cord]] server %string%
 [bungee[cord]] network ip of [player] %string%%
 name of [this] server on [bungee[cord]] network
