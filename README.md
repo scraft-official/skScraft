@@ -67,6 +67,10 @@ number of players on [bungee[cord]] server %string%
 [bungee[cord]] uuid of [player] %string%
 [number of] [max] slots of [bungee[cord]] server %string%
 [bungee[cord]] network ip of [player] %string%%
+name of [this] server on [bungee[cord]] network
+
+[perfectly] centered text %string%
+[perfectly] centered limited text %string% with max [limit] of %integer% [spaces]
 ```
 * [] - You don't need to use text inside of this characters (ex. [bungee[cord]] -> use bungeecord or bungee)
 
@@ -86,6 +90,22 @@ If you found any bugs or issue when using my addon, fell free to join to skScraf
 
 ------------
 #### EXAMPLE OF SYNTAXES:
+```java
+command /text:
+  trigger:
+    set {_text1} to perfectly centered text "Hi, this is a very good centered"
+    set {_text2} to perfectly centered text "&lMESSAGE :D"
+    send "%{_text1}%"
+    send "%{_text2}%"
+
+command /text2:
+  trigger:
+    set {_text1} to perfectly centered limited text "scraft" with max limit of 22 spaces
+    set {_text2} to perfectly centered limited text "----" with max limit of 22 spaces
+    send "%{_text1}%"
+    send "%{_text2}%"
+```
+
 ```java
 command /test:
   trigger:
