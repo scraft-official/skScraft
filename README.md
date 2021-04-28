@@ -56,6 +56,10 @@ execute command %string% on [bungee[cord]] network as [player] %string%
 execute command %string% on [bungee[cord]] proxy
 kick all players from [bungee[cord]] network [with message %string%]
 stop [bungee[cord]] proxy [with message %string%]
+kick %string% from bungeecord [network] due to %string%
+send bungee[cord] actionbar %string% to [player] %string%
+send bungee[cord] title %string% with subtitle %string% for %integer% [tick[s]] with %integer% [tick[s]] fade in and %integer% [tick[s]] fade out to [player] %string%
+/!\ Don't use default timespan from skript. Title effect allow only for integers (1 = 1 tick | 20 = 1 second | 100 = 5 seconds | 1200 = 1 minute).
 ```
 
 #### EXPRESSIONS　
